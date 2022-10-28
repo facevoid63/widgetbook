@@ -362,6 +362,7 @@ class _WidgetbookState<CustomTheme> extends State<Widgetbook<CustomTheme>> {
       ],
       child: MaterialApp.router(
         routeInformationParser: goRouter.routeInformationParser,
+        routeInformationProvider: goRouter.routeInformationProvider,
         routerDelegate: goRouter.routerDelegate,
         title: widget.appInfo.name,
         themeMode: ThemeMode.dark,

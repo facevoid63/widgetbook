@@ -24,6 +24,7 @@ Widget _defaultAppBuilderMethod(BuildContext context, Widget child) {
     },
     debugShowCheckedModeBanner: false,
     routeInformationParser: _router.routeInformationParser,
+    routeInformationProvider: _router.routeInformationProvider,
     routerDelegate: _router.routerDelegate,
   );
 }
@@ -35,6 +36,7 @@ AppBuilderFunction get materialAppBuilder =>
         debugShowCheckedModeBanner: false,
         routerDelegate: _router.routerDelegate,
         routeInformationParser: _router.routeInformationParser,
+        routeInformationProvider: _router.routeInformationProvider,
       );
     };
 
@@ -45,6 +47,7 @@ AppBuilderFunction get cupertinoAppBuilder =>
         debugShowCheckedModeBanner: false,
         routerDelegate: _router.routerDelegate,
         routeInformationParser: _router.routeInformationParser,
+        routeInformationProvider: _router.routeInformationProvider,
       );
     };
 
